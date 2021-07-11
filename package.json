@@ -15,6 +15,7 @@
     "postinstall": "netlify-lambda install"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
     "@babel/preset-typescript": "^7.14.5",
     "@types/aws-lambda": "^8.10.78",
     "@types/node": "^16.3.1",

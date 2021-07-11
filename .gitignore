@@ -11,10 +11,9 @@
 /out/
 
 # production
-/build
+# /build
 /lambda
 /.netlify
-/functions/bundle
 
 # misc
 .DS_Store
