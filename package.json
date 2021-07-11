@@ -9,8 +9,9 @@
     "netlify-lambda": "^2.0.11"
   },
   "scripts": {
-    "start": "netlify-lambda build functions && netlify dev",
-    "build": "netlify-lambda build functions",
+    "start": "netlify-lambda build src && netlify dev",
+    "build": "netlify-lambda build src",
+    "ts-check": "tsc --noEmit",
     "postinstall": "netlify-lambda install"
   },
   "devDependencies": {

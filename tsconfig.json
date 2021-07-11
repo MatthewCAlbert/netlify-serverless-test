@@ -2,8 +2,31 @@
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES2017",
+    "allowJs": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "outDir": "./functions/bundle",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "preserveConstEnums": true,
-    "sourceMap": false
-  }
+    "sourceMap": false,
+    "isolatedModules": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts",
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.js"
+  ]
 }
