@@ -1,0 +1,22 @@
+{
+  "name": "serverless-netlify-test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/functions": "^0.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "netlify-lambda": "^2.0.11"
+  },
+  "scripts": {
+    "start": "netlify-lambda build functions && netlify dev",
+    "build": "netlify-lambda build functions",
+    "postinstall": "netlify-lambda install"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/aws-lambda": "^8.10.78",
+    "@types/node": "^16.3.1",
+    "typescript": "^4.3.5"
+  }
+}
